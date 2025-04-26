@@ -1,4 +1,4 @@
-# User Story Template
+# User Story 
 
 **Title:**
 Account Registration
@@ -19,7 +19,7 @@ _As a user, I want to register with my name, username, age, and country, so that
 
 
 
-# User Story Template
+# User Story 
 **Title:**
 Account Login
 
@@ -38,7 +38,7 @@ _As a user, I want to log in using my username and password, so that I can acces
 - Due to security limits, user login is based on default credentials after logout.
 
 
-# User Story Template
+# User Story 
 **Title:**
 Error Feedback on Login
 
@@ -57,7 +57,7 @@ _As a user, I want to receive a message if I enter the wrong username or passwor
 - Focus on clear, user-friendly error messages.
 
 
-# User Story Template
+# User Story 
 **Title:**
 View Weekly Habits
 
@@ -76,7 +76,7 @@ _As a user, I want to see a list of my weekly habits, so that I can easily track
 - Clear and organized display improves user experience.
 
 
-# User Story Template
+# User Story 
 **Title:**
 Add a New Habit
 
@@ -95,7 +95,7 @@ _As a user, I want to add new habits with a title, description, and category, so
 - Categories could include Fitness, Learning, Health, etc.
 
 
-# User Story Template
+# User Story 
 **Title:**
 Delete a Habit
 
@@ -114,7 +114,7 @@ _As a user, I want to delete a habit from my list, so that I can manage and orga
 - Consider adding a "Are you sure?" confirmation to prevent mistakes.
 
 
-# User Story Template
+# User Story 
 **Title:**
 Personalize Habit with Color
 
@@ -132,7 +132,7 @@ _As a user, I want to assign a specific color to each habit, so that I can visua
 **Notes:**
 - Provide a simple color picker or preset color options.
 
-# User Story Template
+# User Story 
 **Title:**
 Update Habit Progress Daily
 
@@ -151,7 +151,7 @@ _As a user, I want to mark a habit as completed each day, so that I can track my
 - Consider allowing users to update progress for previous days too.
 
 
-# User Story Template
+# User Story 
 **Title:**
 View Habit History
 
@@ -170,7 +170,7 @@ _As a user, I want to see the completion history of my habits, so that I can rev
 - A simple calendar view would be very user-friendly.
 
 
-# User Story Template
+# User Story 
 **Title:**
 View Personal Information
 
@@ -188,7 +188,7 @@ _As a user, I want to view my saved name, username, age, and country on my profi
 - Ensure fields are clearly labeled for easy reading.
 
 
-# User Story Template
+# User Story 
 **Title:**
 Edit Personal Information
 
@@ -207,7 +207,7 @@ _As a user, I want to update my name, username, age, and country on my profile p
 - Consider confirmation messages after saving updates.
 
 
-# User Story Template
+# User Story 
 **Title:**
 Save Updated Information
 
@@ -226,7 +226,7 @@ _As a user, I want the changes I make on my profile page to be saved, so that my
 - Use a loading indicator during save process if needed.
 
 
-# User Story Template
+# User Story 
 **Title:**
 View Weekly Reports
 
@@ -246,7 +246,7 @@ _As a user, I want to see a report of my weekly habit progress, so that I can tr
 
 
 
-# User Story Template
+# User Story 
 **Title:**
 Visualize Completed Habits
 
@@ -265,7 +265,7 @@ _As a user, I want to see a chart of my completed habits for each day, so that I
 - Prefer simple bar charts or pie charts for user-friendliness.
 
 
-# User Story Template
+# User Story 
 **Title:**
 View All Habits (Completed + Incomplete)
 
@@ -283,7 +283,7 @@ _As a user, I want to see both completed and incomplete habits in the weekly rep
 - Could add filters to view completed only or all.
 
 
-# User Story Template
+# User Story 
 **Title:**
 Enable/Disable Notifications
 
@@ -302,7 +302,7 @@ _As a user, I want to enable or disable notifications for my habits, so that I c
 - Default should be notifications enabled for active habits.
 
 
-# User Story Template
+# User Story 
 **Title:**
 Select Habits for Notifications
 
@@ -319,7 +319,7 @@ _As a user, I want to select specific habits to receive notifications for, so th
 **Notes:**
 - Add checkboxes or toggles next to each habit.
 
-# User Story Template
+# User Story 
 **Title:**
 Set Notification Times
 
