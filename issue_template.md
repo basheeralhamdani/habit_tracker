@@ -1,343 +1,428 @@
-# User Story 
+# User Story: Login/Registration Page
 
 **Title:**
-Account Registration
-
-_As a user, I want to register with my name, username, age, and country, so that I can create an account and access the habit tracking features._
+_As a user, I want to log in or register, so that I can access my habit tracking data._
 
 **Acceptance Criteria:**
-1. User can input name, username, age, and country.
-2. User receives confirmation that account has been created.
-3. Credentials are not saved in the browser cache.
+1. The user can see the login form with email and password fields.
+2. The user can register a new account with their email and a secure password.
+3. The user can reset their password if forgotten.
+
+**Priority:** High
+
+**Story Points:** 5
+
+**Notes:**
+- Ensure that password fields are masked.
+- Add a "Remember me" option for the login.
+- Handle invalid login attempts with an error message.
+
+
+
+# User Story: Account Registration
+
+**Title:**
+_As a user, I want to register with my name, username, age, and country so that I can create an account and access the habit tracking features._
+
+**Acceptance Criteria:**
+1. The user can enter their name, username, age, and country in the registration form.
+2. The user can submit the form to create a new account.
+3. The user receives a confirmation message once their account is successfully created.
+4. The registration form must validate that the username is unique and the age is a valid number.
+
+**Priority:** High
+
+**Story Points:** 5
+
+**Notes:**
+- Make sure the username is checked for availability during registration.
+- Validate that the user’s age is a valid number and is within an acceptable range (e.g., 18+).
+- The country field should be a dropdown list of available countries.
+
+
+
+# User Story: Account Login
+
+**Title:**
+_As a user, I want to log in using my username and password so that I can access my account and track my habits._
+
+**Acceptance Criteria:**
+1. The user can enter their username and password in the login form.
+2. The login form is submitted to authenticate the user.
+3. The user is redirected to the homepage upon successful login.
+4. If the login is unsuccessful, an error message is shown with details on why login failed.
+
+**Priority:** High
+
+**Story Points:** 5
+
+**Notes:**
+- The login form should include a "forgot password" option.
+- Password input should be masked for security.
+- Provide a loading indicator when the login request is in progress.
+
+
+
+# User Story: Error Feedback on Login
+
+**Title:**
+_As a user, I want to receive a message if I enter the wrong username or password so that I know my login attempt was unsuccessful._
+
+**Acceptance Criteria:**
+1. The user is informed if the entered username or password is incorrect.
+2. The error message clearly states that either the username or password is invalid.
+3. The user is given the option to try again with corrected details.
 
 **Priority:** High
 
 **Story Points:** 3
 
 **Notes:**
-- Data is stored temporarily; credentials are cleared after logout.
+- The error message should be prominent and easy to understand.
+- The user should be allowed to reattempt logging in without refreshing the page.
+- Ensure there is a timeout after a number of unsuccessful login attempts to prevent brute-force attacks.
 
 
+# User Story: View Welcome Message
 
-# User Story 
 **Title:**
-Account Login
-
-_As a user, I want to log in using my username and password, so that I can access my account and track my habits._
+_As a user, I want to see a personalized welcome message with my name on the homepage, so that I feel recognized and can confirm I am logged into the correct account._
 
 **Acceptance Criteria:**
-1. User can input username and password.
-2. Successful login redirects to homepage.
-3. Only default credentials work after logout.
-
-**Priority:** High
-
-**Story Points:** 2
-
-**Notes:**
-- Due to security limits, user login is based on default credentials after logout.
-
-
-# User Story 
-**Title:**
-Error Feedback on Login
-
-_As a user, I want to receive a message if I enter the wrong username or password, so that I know my login attempt was unsuccessful._
-
-**Acceptance Criteria:**
-1. Incorrect login shows an error message.
-2. Error message clearly indicates wrong credentials.
-3. User stays on login page if login fails.
-
-**Priority:** High
-
-**Story Points:** 1
-
-**Notes:**
-- Focus on clear, user-friendly error messages.
-
-
-# User Story 
-**Title:**
-View Weekly Habits
-
-_As a user, I want to see a list of my weekly habits, so that I can easily track my daily progress._
-
-**Acceptance Criteria:**
-1. User sees a list of all current habits on the homepage.
-2. Each habit is displayed with its name and progress.
-3. Habits are sorted by creation time or priority.
+1. The homepage displays a personalized welcome message with the user's name.
+2. The message should greet the user based on the time of day (e.g., "Good Morning, [User]!").
+3. The user can confirm that the account shown is the one they are logged into by checking the name displayed.
+4. The welcome message is visible immediately upon loading the homepage.
 
 **Priority:** High
 
 **Story Points:** 3
 
 **Notes:**
-- Clear and organized display improves user experience.
+- Ensure the name is pulled from the user’s profile information.
+- Make sure the message is responsive and looks good on all devices.
+- Provide a fallback if the user's name is unavailable (e.g., "Welcome back!").
 
 
-# User Story 
+
+
+# User Story: Display Weekly Progress
+
 **Title:**
-Add a New Habit
-
-_As a user, I want to add new habits with a title, description, and category, so that I can expand my list of activities to track._
+_As a user, I want to see my daily progress for each habit on the homepage, so that I can easily monitor my progress._
 
 **Acceptance Criteria:**
-1. User can input title, description, and select category.
-2. Newly added habit appears instantly in the habits list.
-3. User is notified when a habit is successfully added.
+1. The user can see a list of habits with a progress bar or percentage indicating how much progress has been made during the week.
+2. The progress should be updated in real time as the user logs their activities.
+3. The homepage displays the number of days completed versus the total days of the week.
+4. The progress section is clearly organized and easy to read.
 
 **Priority:** High
 
-**Story Points:** 3
+**Story Points:** 5
 
 **Notes:**
-- Categories could include Fitness, Learning, Health, etc.
+- Each habit's progress should be displayed in a visually appealing format (e.g., progress bars, color-coded).
+- Include a "Reset Progress" button if the user wants to start over for the week.
+- Ensure the progress is displayed in the correct time zone.
 
 
-# User Story 
+
+
+# User Story: View Completed Habits
+
 **Title:**
-Delete a Habit
-
-_As a user, I want to delete a habit from my list, so that I can manage and organize my habits easily._
+_As a user, I want to see a section for completed habits on the homepage, so that I can track what I have already achieved._
 
 **Acceptance Criteria:**
-1. Each habit has a delete button/icon.
-2. User gets a confirmation prompt before deletion.
-3. After deletion, the habit is immediately removed from the list.
-
-**Priority:** Medium
-
-**Story Points:** 2
-
-**Notes:**
-- Consider adding a "Are you sure?" confirmation to prevent mistakes.
-
-
-# User Story 
-**Title:**
-Personalize Habit with Color
-
-_As a user, I want to assign a specific color to each habit, so that I can visually differentiate them easily._
-
-**Acceptance Criteria:**
-1. User can select a color when creating or editing a habit.
-2. Selected color appears next to the habit name in the list.
-3. Color choice can be updated later.
-
-**Priority:** Medium
-
-**Story Points:** 2
-
-**Notes:**
-- Provide a simple color picker or preset color options.
-
-# User Story 
-**Title:**
-Update Habit Progress Daily
-
-_As a user, I want to mark a habit as completed each day, so that I can track my consistency._
-
-**Acceptance Criteria:**
-1. Each habit has a daily checkbox or button to mark completion.
-2. Progress is automatically updated once marked.
-3. Visual feedback (like a checkmark or color change) is shown after updating.
-
-**Priority:** High
-
-**Story Points:** 3
-
-**Notes:**
-- Consider allowing users to update progress for previous days too.
-
-
-# User Story 
-**Title:**
-View Habit History
-
-_As a user, I want to see the completion history of my habits, so that I can review my long-term progress._
-
-**Acceptance Criteria:**
-1. User can select a habit and view a history calendar or list.
-2. Completed days are clearly marked (e.g., green circles).
-3. Missed days are also indicated for clarity.
-
-**Priority:** Medium
-
-**Story Points:** 3
-
-**Notes:**
-- A simple calendar view would be very user-friendly.
-
-
-# User Story 
-**Title:**
-View Personal Information
-
-_As a user, I want to view my saved name, username, age, and country on my profile page, so that I can confirm my account details._
-
-**Acceptance Criteria:**
-1. Profile page displays name, username, age, and country.
-2. Information is read-only unless the user chooses to edit.
-
-**Priority:** High
-
-**Story Points:** 2
-
-**Notes:**
-- Ensure fields are clearly labeled for easy reading.
-
-
-# User Story 
-**Title:**
-Edit Personal Information
-
-_As a user, I want to update my name, username, age, and country on my profile page, so that my information stays current._
-
-**Acceptance Criteria:**
-1. Edit button unlocks fields for editing.
-2. Changes can be saved or canceled.
-3. Input validation is applied (e.g., no empty fields).
-
-**Priority:** High
-
-**Story Points:** 3
-
-**Notes:**
-- Consider confirmation messages after saving updates.
-
-
-# User Story 
-**Title:**
-Save Updated Information
-
-_As a user, I want the changes I make on my profile page to be saved, so that my updated information is reflected across the app._
-
-**Acceptance Criteria:**
-1. After saving, updated information immediately displays on the profile page.
-2. Updated name appears in the app’s header.
-3. Feedback is given when saving is successful or if an error occurs.
-
-**Priority:** High
-
-**Story Points:** 3
-
-**Notes:**
-- Use a loading indicator during save process if needed.
-
-
-# User Story 
-**Title:**
-View Weekly Reports
-
-_As a user, I want to see a report of my weekly habit progress, so that I can track how well I am maintaining my habits._
-
-**Acceptance Criteria:**
-1. Weekly report displays all tracked habits.
-2. Progress shown for each day of the week.
-3. Summary at the end of the week (e.g., total habits completed).
-
-**Priority:** High
-
-**Story Points:** 3
-
-**Notes:**
-- Use simple summary charts or progress bars for clarity.
-
-
-
-# User Story 
-**Title:**
-Visualize Completed Habits
-
-_As a user, I want to see a chart of my completed habits for each day, so that I can easily spot trends in my behavior._
-
-**Acceptance Criteria:**
-1. Charts/graphs visualize completed habits per day.
-2. Different habits represented by different colors or sections.
-3. Hover or click on chart elements to show detailed info.
+1. The homepage shows a section where completed habits are listed.
+2. Each habit entry includes the habit name, date, and any relevant notes or achievements.
+3. Completed habits are visually separated from ongoing or incomplete habits.
+4. The section should be easy to access and navigate.
 
 **Priority:** Medium
 
 **Story Points:** 4
 
 **Notes:**
-- Prefer simple bar charts or pie charts for user-friendliness.
+- Display completed habits with a checkmark or similar indicator.
+- Allow the user to click on a completed habit for more details (e.g., the number of days completed).
+- Consider displaying achievements for completed habits (e.g., "You completed this habit for 7 consecutive days!").
 
 
-# User Story 
+# User Story: Access Menu Options
+
 **Title:**
-View All Habits (Completed + Incomplete)
-
-_As a user, I want to see both completed and incomplete habits in the weekly report, so that I get a full picture of my progress._
+_As a user, I want to access a menu with options for configuring my habits, viewing reports, editing my profile, and signing out, so that I can easily navigate to different parts of the app._
 
 **Acceptance Criteria:**
-1. Report lists completed and incomplete habits separately.
-2. Progress percentage displayed per habit.
-
-**Priority:** Medium
-
-**Story Points:** 3
-
-**Notes:**
-- Could add filters to view completed only or all.
-
-
-# User Story 
-**Title:**
-Enable/Disable Notifications
-
-_As a user, I want to enable or disable notifications for my habits, so that I can choose if I want reminders._
-
-**Acceptance Criteria:**
-1. Setting to turn notifications on/off globally.
-2. Toggle available in the app settings or notifications page.
-3. Immediate feedback when toggling (e.g., message "Notifications Enabled").
+1. The menu is easily accessible from any page in the app.
+2. The menu includes clear options such as "Configure Habits", "View Reports", "Edit Profile", and "Sign Out".
+3. The user can open the menu with a single click or tap.
+4. The menu is responsive and works well on both desktop and mobile devices.
 
 **Priority:** High
 
-**Story Points:** 2
+**Story Points:** 5
 
 **Notes:**
-- Default should be notifications enabled for active habits.
+- The menu should be collapsible for better user experience on smaller screens.
+- Ensure that each option is clearly labeled and easy to understand.
+- Highlight the active page or section in the menu (e.g., "Profile" should be highlighted when the user is on the Profile page).
 
 
-# User Story 
+
+# User Story: Navigate to Profile
+
 **Title:**
-Select Habits for Notifications
-
-_As a user, I want to select specific habits to receive notifications for, so that I only get reminders for the ones I care about._
+_As a user, I want to access a menu with options to configure my habits, view reports, edit my profile, and sign out, so that I can easily navigate different parts of the app._
 
 **Acceptance Criteria:**
-1. User can see a list of habits and select/deselect them for notifications.
-2. Save selected habits for future notifications.
-
-**Priority:** Medium
-
-**Story Points:** 3
-
-**Notes:**
-- Add checkboxes or toggles next to each habit.
-
-# User Story 
-**Title:**
-Set Notification Times
-
-_As a user, I want to set notifications for morning, afternoon, and evening, so that I get reminders throughout the day._
-
-**Acceptance Criteria:**
-1. User can select one or more preferred times (morning, afternoon, evening).
-2. Default suggested times (e.g., 9AM, 2PM, 7PM) but editable.
-3. Notifications sent at selected times for selected habits.
+1. The user can click or tap on the "Edit Profile" option from the menu to navigate to their profile page.
+2. The profile page displays the user's personal information, such as name, username, age, and country.
+3. The menu should clearly label the "Edit Profile" option and provide a visual cue when selected.
+4. The user can return to the previous page from the profile page easily.
 
 **Priority:** High
 
 **Story Points:** 4
 
 **Notes:**
-- User could later adjust these times individually if needed.
+- Ensure that the user's profile page is updated in real-time if any changes are made to their information.
+- The "Edit Profile" button should be prominent and easy to locate in the menu.
 
 
 
+# User Story: Navigate to Habits Page
 
+**Title:**
+_As a user, I want to access the habits page from the menu, so that I can configure and manage my habits._
+
+**Acceptance Criteria:**
+1. The user can click or tap on the "Habits" option in the menu to navigate to the habits page.
+2. The habits page should list all the user’s habits, showing their current progress.
+3. The user can easily add, remove, or edit habits from the habits page.
+4. The habits page should be displayed clearly and organized for easy management.
+
+**Priority:** High
+
+**Story Points:** 4
+
+**Notes:**
+- Ensure that the "Habits" page is intuitive and easy to use, with clear buttons for adding or modifying habits.
+- Provide a summary of the user's habits at the top of the page (e.g., “3 out of 5 habits completed this week”).
+
+
+
+# User Story: Sign Out from Menu
+
+**Title:**
+_As a user, I want to sign out of my account using an option in the menu, so that I can securely log out when I'm finished using the app._
+
+**Acceptance Criteria:**
+1. The menu includes a clearly labeled "Sign Out" option.
+2. When the user clicks or taps the "Sign Out" option, they are logged out and redirected to the login page.
+3. The user receives a confirmation message that they have successfully signed out.
+4. Any unsaved changes (if applicable) are either saved or discarded before sign-out.
+
+**Priority:** High
+
+**Story Points:** 3
+
+**Notes:**
+- Ensure that the user is logged out securely, with no residual data left in the session.
+- After signing out, the user should be redirected to the login page or a public area of the app.
+- Provide a "session timeout" feature for automatic logout if the user is inactive for too long.
+
+
+# User Story: Add a New Habit
+
+**Title:**
+_As a user, I want to add new habits on the details configuration page so that I can manage and update my habits as needed._
+
+**Acceptance Criteria:**
+1. The user can navigate to the habits page and click an "Add Habit" button.
+2. The user is directed to a form where they can input details about the habit, such as name, frequency (daily, weekly, etc.), and any other relevant information.
+3. Upon submitting the form, the new habit is added to the list of habits on the habits page.
+4. The new habit appears in the list with its assigned frequency and any other relevant details.
+
+**Priority:** High
+
+**Story Points:** 5
+
+**Notes:**
+- Ensure the form is simple to fill out and allows users to easily create a habit.
+- Consider adding input validation to ensure that required fields (e.g., habit name) are filled out.
+- Provide a success message when the habit is successfully added.
+
+
+
+# User Story: Delete a Habit
+
+**Title:**
+_As a user, I want to delete existing habits so that I can keep my habits up to date._
+
+**Acceptance Criteria:**
+1. The user can click on a "Delete" button next to any habit in the habit list.
+2. Upon clicking "Delete", the user is prompted with a confirmation message to ensure they want to delete the habit.
+3. Once confirmed, the habit is removed from the list and is no longer tracked.
+4. The user receives feedback that the habit has been successfully deleted.
+
+**Priority:** High
+
+**Story Points:** 4
+
+**Notes:**
+- Ensure that deleted habits are permanently removed and cannot be recovered unless the user recreates them.
+- Consider providing an "Undo" option for a short time after deletion in case of accidental deletion.
+- The "Delete" button should be easy to find, but not so prominent that users accidentally click it.
+
+
+
+# User Story: Personalize a Habit with Color
+
+**Title:**
+_As a user, I want to assign a specific color to each habit to make it personal to me._
+
+**Acceptance Criteria:**
+1. The user can choose a color for each habit when creating or editing a habit.
+2. A color picker is available to the user, allowing them to select a color from a palette or input a custom color code.
+3. The chosen color is applied to the habit's display on the habits page and helps visually differentiate the habits.
+4. The color choice persists even if the user refreshes the page or logs out and logs back in.
+
+**Priority:** Medium
+
+**Story Points:** 4
+
+**Notes:**
+- Ensure the color picker is user-friendly and accessible on both desktop and mobile devices.
+- Provide a default color for users who do not wish to personalize their habits.
+- The colors should be visually distinct enough to avoid confusion between different habits.
+
+
+# User Story: View Weekly Reports
+
+**Title:**
+_As a user, I want to see a report of my weekly habit progress so that I can understand how well I am maintaining my habits._
+
+**Acceptance Criteria:**
+1. The user can view a summary of their habit progress for the entire week.
+2. The report includes details such as the number of days each habit was completed and the overall progress percentage.
+3. The report is displayed in a clear, easy-to-read format (e.g., table or list format).
+4. The user can filter the report by specific habits or days, if needed.
+
+**Priority:** High
+
+**Story Points:** 5
+
+**Notes:**
+- Ensure that the report covers all habits the user has tracked for the week.
+- The report should update in real-time as the user logs their progress for each day.
+- Consider adding the ability to export the report to CSV or PDF for further analysis.
+
+
+# User Story: Visualize Completed Habits
+
+**Title:**
+_As a user, I want to see a chart of my completed habits for each day of the week so that I can quickly identify trends in my progress._
+
+**Acceptance Criteria:**
+1. The user can view a chart (e.g., bar chart, line graph) that shows how many habits were completed each day of the week.
+2. The chart is interactive, allowing the user to hover over or click on individual data points for more detailed information.
+3. The chart is clearly labeled with days of the week on the x-axis and the number of completed habits on the y-axis.
+4. The user can switch between different types of visualizations (e.g., bar chart, pie chart) based on their preference.
+
+**Priority:** Medium
+
+**Story Points:** 4
+
+**Notes:**
+- The chart should be visually appealing and easy to understand, even for users with no data analysis experience.
+- Consider offering color coding for different habits to differentiate them in the chart.
+
+
+
+# User Story: View All Habits
+
+**Title:**
+_As a user, I want to see both completed and incomplete habits in my report so that I have a comprehensive view of my habit tracking performance._
+
+**Acceptance Criteria:**
+1. The report should display all habits, both completed and incomplete, for the week.
+2. Incomplete habits are clearly marked or visually distinguished (e.g., in gray or with a “not completed” tag).
+3. The user can easily identify which habits they have successfully completed and which ones they need to focus on.
+4. The report includes additional details about incomplete habits, such as the specific days they were missed.
+
+**Priority:** High
+
+**Story Points:** 5
+
+**Notes:**
+- Ensure that incomplete habits are not hidden or difficult to find in the report.
+- Consider adding a summary of the user’s habit completion rate to give them an overall performance view.
+
+
+# User Story: Enable/Disable Notifications
+
+**Title:**
+_As a user, I want to be able to enable or disable notifications for the app, so that I can choose whether or not to receive reminders for my habits._
+
+**Acceptance Criteria:**
+1. The user can toggle a setting to enable or disable notifications for the app in the notifications settings page.
+2. When notifications are disabled, the user will no longer receive any reminders for their habits.
+3. When notifications are enabled, the user will start receiving notifications for the habits they have selected.
+4. The user can easily toggle this setting on or off at any time.
+
+**Priority:** High
+
+**Story Points:** 3
+
+**Notes:**
+- Make sure that notifications are fully disabled when the user opts out, including push notifications and in-app reminders.
+- Consider adding a clear visual indicator for when notifications are enabled or disabled.
+
+
+# User Story: Add Habits for Notifications
+
+**Title:**
+_As a user, I want to select specific habits to receive notifications for, so that I only get reminders for the habits I am actively working on._
+
+**Acceptance Criteria:**
+1. The user can navigate to a list of their habits and choose which ones they want to receive notifications for.
+2. The user can toggle notifications for each habit individually.
+3. Once selected, the user will start receiving reminders only for the habits they’ve chosen.
+4. The user can update the list of selected habits for notifications at any time.
+
+**Priority:** High
+
+**Story Points:** 4
+
+**Notes:**
+- Provide a clear list of habits with checkboxes to allow users to select the ones they want to receive notifications for.
+- Allow users to deselect habits easily if they no longer wish to receive reminders for them.
+
+
+
+# User Story: Set Notification Times
+
+**Title:**
+_As a user, I want to have the option to receive notifications three times a day (morning, afternoon, evening) for all selected habits, so that I get timely reminders throughout the day to complete my habits._
+
+**Acceptance Criteria:**
+1. The user can set up three distinct times for notifications: morning, afternoon, and evening.
+2. For each habit that is selected for notifications, the user can assign specific times during the day for receiving reminders (e.g., 8 AM for morning, 2 PM for afternoon, and 6 PM for evening).
+3. The notifications are sent automatically at the set times for each habit.
+4. The user can modify the times for their notifications at any time.
+
+**Priority:** Medium
+
+**Story Points:** 5
+
+**Notes:**
+- Provide a simple time picker interface for users to easily set notification times.
+- Ensure that the reminders are sent precisely at the set times.
+- Consider offering default time slots (e.g., 8 AM, 2 PM, 6 PM) for users who want quick setup.
+
+
+  
 
