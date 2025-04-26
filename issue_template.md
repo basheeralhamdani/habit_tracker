@@ -1,6 +1,7 @@
 # User Story: Login/Registration Page
 
-**Title:**
+**Title:**  Login/Registration Page
+
 _As a user, I want to log in or register, so that I can access my habit tracking data._
 
 **Acceptance Criteria:**
@@ -83,7 +84,9 @@ _As a user, I want to receive a message if I enter the wrong username or passwor
 - Ensure there is a timeout after a number of unsuccessful login attempts to prevent brute-force attacks.
 
 
-# User Story: View Welcome Message
+# User Story: Home Page
+
+## View Welcome Message
 
 **Title:**
 _As a user, I want to see a personalized welcome message with my name on the homepage, so that I feel recognized and can confirm I am logged into the correct account._
