@@ -1,6 +1,7 @@
 # User Story: Login/Registration Page
 
-**Title:**  Login/Registration Page
+**Title:**  
+## Login/Registration Page
 
 _As a user, I want to log in or register, so that I can access my habit tracking data._
 
@@ -20,7 +21,7 @@ _As a user, I want to log in or register, so that I can access my habit tracking
 
 
 
-# User Story: Account Registration
+## Account Registration
 
 **Title:**
 _As a user, I want to register with my name, username, age, and country so that I can create an account and access the habit tracking features._
@@ -42,7 +43,7 @@ _As a user, I want to register with my name, username, age, and country so that 
 
 
 
-# User Story: Account Login
+## Account Login
 
 **Title:**
 _As a user, I want to log in using my username and password so that I can access my account and track my habits._
@@ -64,7 +65,7 @@ _As a user, I want to log in using my username and password so that I can access
 
 
 
-# User Story: Error Feedback on Login
+## Error Feedback on Login
 
 **Title:**
 _As a user, I want to receive a message if I enter the wrong username or password so that I know my login attempt was unsuccessful._
@@ -86,8 +87,8 @@ _As a user, I want to receive a message if I enter the wrong username or passwor
 
 # User Story: Home Page
 
-## View Welcome Message
 
+## View Welcome Message
 **Title:**
 _As a user, I want to see a personalized welcome message with my name on the homepage, so that I feel recognized and can confirm I am logged into the correct account._
 
@@ -109,7 +110,7 @@ _As a user, I want to see a personalized welcome message with my name on the hom
 
 
 
-# User Story: Display Weekly Progress
+## Display Weekly Progress
 
 **Title:**
 _As a user, I want to see my daily progress for each habit on the homepage, so that I can easily monitor my progress._
@@ -131,8 +132,7 @@ _As a user, I want to see my daily progress for each habit on the homepage, so t
 
 
 
-
-# User Story: View Completed Habits
+## View Completed Habits
 
 **Title:**
 _As a user, I want to see a section for completed habits on the homepage, so that I can track what I have already achieved._
@@ -152,9 +152,9 @@ _As a user, I want to see a section for completed habits on the homepage, so tha
 - Allow the user to click on a completed habit for more details (e.g., the number of days completed).
 - Consider displaying achievements for completed habits (e.g., "You completed this habit for 7 consecutive days!").
 
+# user stories for the menu
 
-# User Story: Access Menu Options
-
+## Access Menu Options
 **Title:**
 _As a user, I want to access a menu with options for configuring my habits, viewing reports, editing my profile, and signing out, so that I can easily navigate to different parts of the app._
 
@@ -175,7 +175,7 @@ _As a user, I want to access a menu with options for configuring my habits, view
 
 
 
-# User Story: Navigate to Profile
+## Navigate to Profile
 
 **Title:**
 _As a user, I want to access a menu with options to configure my habits, view reports, edit my profile, and sign out, so that I can easily navigate different parts of the app._
@@ -196,7 +196,7 @@ _As a user, I want to access a menu with options to configure my habits, view re
 
 
 
-# User Story: Navigate to Habits Page
+## Navigate to Habits Page
 
 **Title:**
 _As a user, I want to access the habits page from the menu, so that I can configure and manage my habits._
@@ -217,7 +217,7 @@ _As a user, I want to access the habits page from the menu, so that I can config
 
 
 
-# User Story: Sign Out from Menu
+## Sign Out from Menu
 
 **Title:**
 _As a user, I want to sign out of my account using an option in the menu, so that I can securely log out when I'm finished using the app._
@@ -238,8 +238,97 @@ _As a user, I want to sign out of my account using an option in the menu, so tha
 - Provide a "session timeout" feature for automatic logout if the user is inactive for too long.
 
 
-# User Story: Add a New Habit
 
+
+# User Stories for profile page
+
+## View Personal Information
+
+**Title:**
+_As a user, I want to view my saved name, username, age, and country on my profile page, so that I can see the details I provided during registration._
+
+**Acceptance Criteria:**
+1. The user can navigate to the profile page and view their saved personal information: name, username, age, and country.
+2. The information is displayed clearly and in a readable format.
+3. The user can easily distinguish between the different pieces of information (e.g., name, username, etc.).
+4. The information is automatically fetched and displayed when the user accesses the profile page.
+
+**Priority:** High
+
+**Story Points:** 3
+
+**Notes:**
+- Ensure that the information shown is accurate and reflects what was saved during registration.
+- Consider adding a section header or title to make it clear where the user’s personal details are located.
+
+
+## Edit Personal Information
+
+**Title:**
+_As a user, I want to update my name, username, age, and country on my profile page, so that I can keep my information up to date._
+
+**Acceptance Criteria:**
+1. The user can edit their name, username, age, and country directly from the profile page.
+2. Editable fields should be clearly indicated (e.g., text boxes, drop-downs for country).
+3. The user can make changes to any or all of these fields.
+4. The user can save changes to update their profile information.
+
+**Priority:** High
+
+**Story Points:** 5
+
+**Notes:**
+- Ensure that the fields for editing are easy to use and intuitive.
+- Allow the user to edit each field individually without affecting the others.
+- Consider adding validation checks (e.g., for the username format or age input).
+
+
+
+## Save Updated Information
+
+**Title:**
+_As a user, I want the changes I make to my profile to be saved, so that my updated details are stored and reflected throughout the app._
+
+**Acceptance Criteria:**
+1. The user can save any changes they make to their personal information.
+2. The updated information is stored and reflected immediately across the app (e.g., the name in the header should change).
+3. A confirmation message is shown to indicate that the changes have been successfully saved.
+4. If an error occurs (e.g., invalid input), the user is informed with a clear error message.
+
+**Priority:** High
+
+**Story Points:** 5
+
+**Notes:**
+- Ensure that the app updates the user’s details across all pages and sections where the information is used.
+- Consider implementing automatic saving or offering a “Save Changes” button.
+- Include error handling for invalid or missing inputs.
+
+
+## Update Name in Header
+
+**Title:**
+_As a user, I want my updated name to be displayed in the app's header after I change it in the profile, so that my changes are immediately visible._
+
+**Acceptance Criteria:**
+1. The user’s updated name should immediately appear in the app’s header after they save the changes on the profile page.
+2. The header is updated dynamically to reflect the change without needing to reload the page.
+3. The name in the header is consistent with the updated information saved in the profile.
+
+**Priority:** High
+
+**Story Points:** 4
+
+**Notes:**
+- Ensure that the header is updated immediately after the user saves changes to their profile.
+- This update should happen seamlessly without requiring a page refresh or additional user interaction.
+
+
+
+
+# user stories for the Habits Page
+
+## Add a New Habit
 **Title:**
 _As a user, I want to add new habits on the details configuration page so that I can manage and update my habits as needed._
 
@@ -260,7 +349,7 @@ _As a user, I want to add new habits on the details configuration page so that I
 
 
 
-# User Story: Delete a Habit
+# Delete a Habit
 
 **Title:**
 _As a user, I want to delete existing habits so that I can keep my habits up to date._
@@ -282,7 +371,7 @@ _As a user, I want to delete existing habits so that I can keep my habits up to 
 
 
 
-# User Story: Personalize a Habit with Color
+# Personalize a Habit with Color
 
 **Title:**
 _As a user, I want to assign a specific color to each habit to make it personal to me._
@@ -302,9 +391,9 @@ _As a user, I want to assign a specific color to each habit to make it personal 
 - Provide a default color for users who do not wish to personalize their habits.
 - The colors should be visually distinct enough to avoid confusion between different habits.
 
+# User Story  for The Reports Page
 
-# User Story: View Weekly Reports
-
+## View Weekly Reports
 **Title:**
 _As a user, I want to see a report of my weekly habit progress so that I can understand how well I am maintaining my habits._
 
@@ -324,7 +413,7 @@ _As a user, I want to see a report of my weekly habit progress so that I can und
 - Consider adding the ability to export the report to CSV or PDF for further analysis.
 
 
-# User Story: Visualize Completed Habits
+## Visualize Completed Habits
 
 **Title:**
 _As a user, I want to see a chart of my completed habits for each day of the week so that I can quickly identify trends in my progress._
@@ -345,7 +434,7 @@ _As a user, I want to see a chart of my completed habits for each day of the wee
 
 
 
-# User Story: View All Habits
+## View All Habits
 
 **Title:**
 _As a user, I want to see both completed and incomplete habits in my report so that I have a comprehensive view of my habit tracking performance._
@@ -364,9 +453,9 @@ _As a user, I want to see both completed and incomplete habits in my report so t
 - Ensure that incomplete habits are not hidden or difficult to find in the report.
 - Consider adding a summary of the user’s habit completion rate to give them an overall performance view.
 
+# User Story: For The Notifications Page
 
-# User Story: Enable/Disable Notifications
-
+## Enable/Disable Notifications
 **Title:**
 _As a user, I want to be able to enable or disable notifications for the app, so that I can choose whether or not to receive reminders for my habits._
 
@@ -385,7 +474,7 @@ _As a user, I want to be able to enable or disable notifications for the app, so
 - Consider adding a clear visual indicator for when notifications are enabled or disabled.
 
 
-# User Story: Add Habits for Notifications
+## Add Habits for Notifications
 
 **Title:**
 _As a user, I want to select specific habits to receive notifications for, so that I only get reminders for the habits I am actively working on._
@@ -406,7 +495,7 @@ _As a user, I want to select specific habits to receive notifications for, so th
 
 
 
-# User Story: Set Notification Times
+## Set Notification Times
 
 **Title:**
 _As a user, I want to have the option to receive notifications three times a day (morning, afternoon, evening) for all selected habits, so that I get timely reminders throughout the day to complete my habits._
