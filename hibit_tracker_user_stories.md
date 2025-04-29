@@ -1,4 +1,4 @@
-# Meditation User Stories
+# Hibit Tracker User Stories
 
 # User Story: Login/Registration Page
 
